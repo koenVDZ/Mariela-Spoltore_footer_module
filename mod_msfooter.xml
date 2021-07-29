@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.8" client="site" method="upgrade">
+	<name>MS Footer Module</name>
+	<creationDate>26/07/2021</creationDate>
+	<author>Koen Vandezande</author>
+	<authorEmail>koen@rioguides.biz</authorEmail>
+	<authorUrl>https://rioguides.biz</authorUrl>
+	<copyright>RioGuides.Biz</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>1.0</version>
+	<description>MOD_MSFOOTER_XML_DESCRIPTION</description>
+
+	<files>
+		<filename module="mod_msfooter">mod_msfooter.php</filename>
+		<folder>tmpl</folder>
+		<folder>language</folder>
+		<filename>mod_msfooter.xml</filename>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/mod_msfooter.ini</language>
+		<language tag="en-GB">en-GB/mod_msfooter.sys.ini</language>
+		<language tag="es-ES">es-ES/mod_msfooter.ini</language>
+		<language tag="es-ES">es-ES/mod_msfooter.sys.ini</language>
+	</languages>
+	<!-- Update servers -->
+	<updateservers>
+		<server type="extension" priority="1" name="M.S. Footer">https://rioguides.biz/joomla_updates/mod_msfooter.xml</server>
+	</updateservers>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="domain"
+					type="url"
+					label="MOD_MSFOOTER_URL_LABEL"
+					description="MOD_MSFOOTER_URL_DESCRIPTION"
+					hint="https://rioguides.biz"
+					filter="url"
+					validate="url"
+				/>
+			</fieldset>
+			<fieldset
+					name="advanced">
+				<field
+						name="moduleclass_sfx"
+						type="text"
+						label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+						description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
