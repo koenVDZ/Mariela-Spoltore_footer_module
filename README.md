@@ -1,1 +1,1 @@
-# Mariela-Spoltore_footer_module
+# Mariela-Spoltore WebSite Joomla 4 Module for Footer
